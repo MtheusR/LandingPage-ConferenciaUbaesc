@@ -26,9 +26,10 @@ h2{
 
 p{
     color: #FFFFFF;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1.8rem;
     text-align: center;
+    line-height: 1.6em;
 }
 
 .interface{
@@ -49,7 +50,8 @@ p{
     margin: auto;
 
     padding: 2.25% 5%;
-    padding-bottom: 2.50%;
+    padding-bottom: 80px;
+    padding-top: 40px;
 }
 
 .sessao-home{
@@ -67,20 +69,19 @@ p{
 }
 
 #convidados{
-    display: grid;
+    margin: auto;
+    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .convidados-fotos{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px ,1fr));
-  grid-gap: 1%;
-  align-items: center;
+  grid-gap: 1.5%;
 }
 
 .prel{
-    height: 50rem;
+    height: 30rem;
     max-height: 270px;
 }
 
@@ -133,36 +134,65 @@ p{
     flex-direction:  column;
 }
 
-.form{
-    display: grid;
-    flex-direction:  column;
-    margin: auto;
+* {
+box-sizing: border-box;
+}
+
+.container{
     text-align: center;
 }
 
-.input-group{
-    display: grid;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
+.container input{
+    display: block;
+    margin: 0 auto;
+}
+
+.row{
+    display: block;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=tel] {
+width: 40%;
+padding: 1.9rem;
+margin-bottom: 10px;
+border: none;
+resize: vertical;
+}
+
+input, button {
+    font-size: 1.6rem;
+}
+
+button {
+background-color: #1B5F69;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+margin: 0px auto;
+width: 20%;
+padding: 1.4rem;
+border: none;
+resize: vertical;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 600px) {
+input[type=text], input[type=tel]{
+    width: 100%;
+    margin-top: 0;
+}
+
+button {
     width: 100%;
 }
-
-
-.input-box{
-    display: grid;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
 }
-
-.input-box input{
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 1.4rem;
-    padding: 1.4rem;
-    margin: 0.5rem auto;
-}
-
