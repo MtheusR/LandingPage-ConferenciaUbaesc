@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    input[type=text], input[type=tel]{
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    html{
+        font-size: 50%;
+    }
+}

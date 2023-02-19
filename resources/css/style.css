@@ -15,12 +15,12 @@ html {
 
 h2{
     margin: auto;
-    margin-bottom: 2.25%;
+    margin-bottom: 30px;
     padding: 6px 30px;
     font-weight: 600;
     color: #FFFFFF;
     background: #1C1C1C;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
@@ -32,13 +32,19 @@ p{
     line-height: 1.6em;
 }
 
+body{
+    background-color: #9CDCE6;
+}
+
 .interface{
     height: 100vh;
     font-family: "Inter";
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
-
+    max-width: 1440px;
+    margin: 0 auto;
     font-size: 1.6rem;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.5);
 
     display: flex;
     /*align-items: center;*/
@@ -48,15 +54,16 @@ p{
 .sessao{
     max-width: 1200px;
     margin: auto;
-
+    
     padding: 2.25% 5%;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.sessao-home{
+.sessao-home-convidados{
     width: 100%;
-    background-color: #9CDCE6;
+    background-color: #103B41;
+    
 }
 
 #home{
@@ -69,21 +76,22 @@ p{
 }
 
 #convidados{
-    margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.convidados-fotos{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px ,1fr));
-  grid-gap: 1.5%;
+.convidados-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
 }
-
-.prel{
-    height: 30rem;
-    max-height: 270px;
+  
+.prel {
+background-color: #ddd;
+padding: 100px;
+text-align: center;
 }
+  
 
 #prel1 {
   background-color: #2FA8BB;
@@ -106,11 +114,11 @@ p{
 
 .sessao-descricao{
     width: 100%;
-    background-color: #FD955B;
+    background-image: url(/resources/imagens/bg-descricao.jpg);
 }
 
 #descricao{
-    display: grid;
+    display: flex;
     flex-direction:  column;
 }
 
@@ -130,7 +138,7 @@ p{
 }
 
 #formulario{
-    display: grid;
+    display: flex;
     flex-direction:  column;
 }
 
@@ -152,10 +160,12 @@ box-sizing: border-box;
     margin: 0 auto;
 }
 
+.col-75{
+    margin-bottom: 12px;
+}
 input[type=text], input[type=tel] {
 width: 40%;
 padding: 1.9rem;
-margin-bottom: 10px;
 border: none;
 resize: vertical;
 }
@@ -169,9 +179,9 @@ background-color: #1B5F69;
 color: white;
 border-radius: 5px;
 cursor: pointer;
-margin: 0px auto;
+margin: 10px auto;
 width: 20%;
-padding: 1.4rem;
+padding: 1.6rem;
 border: none;
 resize: vertical;
 }
@@ -186,13 +196,15 @@ display: table;
 clear: both;
 }
 
-@media screen and (max-width: 600px) {
-input[type=text], input[type=tel]{
-    width: 100%;
-    margin-top: 0;
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
 }
-
-button {
-    width: 100%;
+  
+body::-webkit-scrollbar-track {
+    background: #9CDCE6;       /* color of the tracking area */
 }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #2fa8bb3b;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
 }
