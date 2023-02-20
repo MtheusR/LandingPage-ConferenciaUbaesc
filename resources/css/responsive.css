@@ -7,10 +7,44 @@
     button {
         width: 100%;
     }
+
+    .convidados-fotos {
+        grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    }
+
+    .sessao-descricao{
+        background-image: url(/resources/imagens/bg-descricao-768.jpg);
+    }
+
+    .sessao-home-convidados-informacoes{
+        background-image:  url(/resources/imagens/bg-principal-768.jpg);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #cards {
+        flex-direction: column;
+    }
+
+    #cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    #cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    #cards section.card button {
+        font-size: 70%;
+    }
 }
 
 @media (max-width: 425px) {
     html{
         font-size: 50%;
+    }
+    .sessao-home-convidados-informacoes{
+        background-image:  url(/resources/imagens/bg-principal-320.jpg);
     }
 }

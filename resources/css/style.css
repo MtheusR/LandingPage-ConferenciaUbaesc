@@ -33,18 +33,17 @@ p{
 }
 
 body{
-    background-color: #9CDCE6;
+    background-color: #91daeb;
 }
 
 .interface{
-    height: 100vh;
     font-family: "Inter";
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
     max-width: 1440px;
     margin: 0 auto;
     font-size: 1.6rem;
-    box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.281);
 
     display: flex;
     /*align-items: center;*/
@@ -54,25 +53,18 @@ body{
 .sessao{
     max-width: 1200px;
     margin: auto;
-    
     padding: 2.25% 5%;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.sessao-home-convidados{
+.sessao-home-convidados-informacoes{
     width: 100%;
-    background-color: #103B41;
-    
+    background-image:  url(/resources/imagens/bg-principal-1440.jpg);
 }
 
 #home{
     height: 477px;
-}
-
-.sessao-convidados{
-    width: 100%;
-    background-color: #9CDCE6;
 }
 
 #convidados{
@@ -83,38 +75,23 @@ body{
 .convidados-fotos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 20px;
+    gap: 10px;
 }
   
-.prel {
-background-color: #ddd;
-padding: 100px;
-text-align: center;
-}
-  
-
-#prel1 {
-  background-color: #2FA8BB;
-  
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#prel2 {
-  background-color: #258493;
-  
-}
-
-#prel3 {
-  background-color: #1B5F69;
-  
-}
-
-#prel4 {
-  background-color: #103B41;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .sessao-descricao{
     width: 100%;
-    background-image: url(/resources/imagens/bg-descricao.jpg);
+    background-image: url(/resources/imagens/bg-descricao-1440.jpg);
 }
 
 #descricao{
@@ -190,21 +167,6 @@ button:hover {
 background-color: #45a049;
 }
 
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-}
-  
-body::-webkit-scrollbar-track {
-    background: #9CDCE6;       /* color of the tracking area */
-}
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #2fa8bb3b;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    background: transparent;
 }
