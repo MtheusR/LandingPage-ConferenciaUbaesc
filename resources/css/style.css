@@ -53,18 +53,26 @@ body{
 .sessao{
     max-width: 1200px;
     margin: auto;
-    padding: 2.25% 5%;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 0px 5%;
+    padding-bottom: 35px;
+    padding-top: 35px;
 }
 
-.sessao-home-convidados-informacoes{
+.sessao-home-convidados{
     width: 100%;
     background-image:  url(/resources/imagens/bg-principal-1440.jpg);
 }
 
 #home{
-    height: 477px;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img-logo{
+    max-width: 40%;
 }
 
 #convidados{

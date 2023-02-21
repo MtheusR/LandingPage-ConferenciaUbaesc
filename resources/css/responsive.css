@@ -19,6 +19,15 @@
     .sessao-home-convidados-informacoes{
         background-image:  url(/resources/imagens/bg-principal-768.jpg);
     }
+
+        #home{
+        margin-top: 9%;
+        margin-bottom: 2%;
+    }
+    
+    .img-logo{
+        max-width: 60%;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -46,5 +55,14 @@
     }
     .sessao-home-convidados-informacoes{
         background-image:  url(/resources/imagens/bg-principal-320.jpg);
+    }
+
+    #home{
+        margin-top: 9%;
+        margin-bottom: 0px;
+    }
+    
+    .img-logo{
+        max-width: 70%;
     }
 }
