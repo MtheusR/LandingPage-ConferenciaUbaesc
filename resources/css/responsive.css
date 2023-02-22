@@ -1,9 +1,19 @@
+@media screen and (min-width: 992px) {
+    #informacoes {
+      padding: 1em 3em;
+    }
+    .colunas-info {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     input[type=text], input[type=tel]{
         width: 100%;
         margin-top: 0;
     }
-    
+
     button {
         width: 100%;
     }
@@ -16,19 +26,25 @@
         background-image: url(/resources/imagens/bg-descricao-768.jpg);
     }
 
-    .sessao-home-convidados-informacoes{
+    .sessao-home-convidados{
         background-image:  url(/resources/imagens/bg-principal-768.jpg);
     }
 
-        #home{
+    #home{
         margin-top: 9%;
         margin-bottom: 2%;
     }
-    
+
     .img-logo{
         max-width: 60%;
     }
+
+    .colunas-info {
+    flex: 0 50%;
+    max-width: 50%;
+    }
 }
+
 
 @media screen and (max-width: 720px) {
     #cards {
@@ -53,8 +69,9 @@
     html{
         font-size: 50%;
     }
-    .sessao-home-convidados-informacoes{
-        background-image:  url(/resources/imagens/bg-principal-320.jpg);
+
+    .sessao-home-convidados{
+        background-image: url(/resources/imagens/bg-principal-320.jpg);
     }
 
     #home{
