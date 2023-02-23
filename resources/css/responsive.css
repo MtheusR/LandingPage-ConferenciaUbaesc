@@ -19,6 +19,7 @@
 
     .sessao-home-convidados{
         background-image:  url(/resources/imagens/bg-principal-768.jpg);
+        background-size: cover;
     }
 
     #home{
@@ -37,6 +38,7 @@
 
     .sessao-formulario{
         background-image: url(/resources/imagens/bg-sessaoform-768.jpg);
+        background-size: cover;
     }
 }
 
@@ -58,14 +60,29 @@
     #cards section.card button {
         font-size: 70%;
     }
+
+    .sessao-formulario{
+        background-image: url(/resources/imagens/bg-sessaoform-320.jpg);
+        background-size: cover;
+    }
+
+    .form{
+        background-image: url(/resources/imagens/bg-form-420.jpg);
+        background-size: cover;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 508px) {
     .form .column {
         flex-wrap: wrap;
     }
     .form :where(.gender-option, .gender) {
         row-gap: 15px;
+    }
+
+    .sessao-home-convidados{
+        background-image:  url(/resources/imagens/bg-principal-320.jpg);
+        background-size: cover;
     }
 }
 
@@ -75,7 +92,7 @@
     }
 
     .sessao-home-convidados{
-        background-image: url(/resources/imagens/bg-principal-320.jpg);
+        background-image: url(/resources/imagens/bg-principal-320.jpg);        
     }
 
     #home{
@@ -85,13 +102,5 @@
     
     .img-logo{
         max-width: 70%;
-    }
-
-    .sessao-formulario{
-        background-image: url(/resources/imagens/bg-sessaoform-320.jpg);
-    }
-
-    .form{
-        background-image: url(/resources/imagens/bg-form-420.jpg);
     }
 }
