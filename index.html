@@ -95,24 +95,70 @@
             <section class="sessao-formulario">
                 <div class="sessao" id="formulario">
                     <h2>INSCREVA-SE</h2>
-                    <div class="container">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-75">
-                                    <input type="text" id="name" name="name" placeholder="Digite seu nome">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-75">
-                                    <input type="tel" id="tel" name="tel" placeholder="(xx) x xxxx-xxxx">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <button>Enviar</button>
-                            </div>
-                        </form>
-                    </div>
+                    <form action="#" class="form">
+
+                      <div class="input-box">
+                        <label>Nome e sobrenome</label>
+                        <input type="text" placeholder="Digite seu nome e sobrenome" required />
+                      </div>
+              
+                      <div class="input-box">
+                        <label>Contato</label>
+                        <input type="tel" placeholder="(XX) X XXXX-XXXX" required />
+                      </div>
+              
+                      <div class="column">
+                        <div class="input-box">
+                          <label>Cidade</label>
+                          <input type="text" placeholder="Digite sua cidade" required />
+                        </div>
+              
+                        <div class="input-box">
+                          <label>Idade</label>
+                          <input type="number" placeholder="Digite sua idade" required />
+                        </div>
+                      </div>
+
+                      <div class="gender-box">
+                        <label>Gênero<label>
+                        <div class="gender-option">
+                          <div class="gender">
+                            <input type="radio" id="check-male" name="gender" checked />
+                            <label id="gender-option" for="check-male">Masculico</label>
+                          </div>
+                          <div class="gender">
+                            <input type="radio" id="check-female" name="gender" />
+                            <label id="gender-option" for="check-female">Feminino</label>
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="input-box">
+                        <label>Faz parte de alguma igreja?</label>
+                        <div class="column">
+                          <div class="select-box">
+                            <select>
+                              <option hidden>Opções</option>
+                              <option>Sim</option>
+                              <option>Não</option>
+                              <option>Visito algumas</option>
+                              <option>Não gosto</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <button>Enviar</button>
+                    </form>
                 </div>
+            </section>
+
+            <section class="sessao-rodape">
+              <div class="sessao" id="rodape">
+                <div class="logo">
+                  <a href="https://www.instagram.com/ubaesc/" target="_blank"><img src="/resources/imagens/logo-ubaesc.png" class="logo-ubaesc"></a>
+                </div>
+                
+              </div>
             </section>
         </div>
     </body>

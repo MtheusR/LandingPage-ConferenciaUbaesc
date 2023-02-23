@@ -36,6 +36,10 @@ body{
     background-color: #91daeb;
 }
 
+body::-webkit-scrollbar {
+    width: 0! important;
+}
+
 .interface{
     font-family: "Inter";
     text-rendering: optimizelegibility;
@@ -137,7 +141,6 @@ height: 100%;
 padding: 1em .5em;
 background: #1c1c1c;
 box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-border-radius: 5px;
 }
   
 .desc-info{
@@ -190,7 +193,7 @@ height: 50px;
 
 .sessao-formulario{
     width: 100%;
-    background-color: #9CDCE6;
+    background-image: url(/resources/imagens/bg-sessaoform-1440.jpg);
 }
 
 #formulario{
@@ -198,55 +201,122 @@ height: 50px;
     flex-direction:  column;
 }
 
-* {
-box-sizing: border-box;
+
+/* =========================================*/
+
+form{
+    background-image: url(/resources/imagens/bg-form-1440.jpg);
+    padding: 20px 40px 40px 40px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 }
 
-.container{
-    text-align: center;
+.form .input-box {
+width: 100%;
+margin-top: 20px;
 }
 
-.container input{
-    display: block;
-    margin: 0 auto;
+.form .column {
+    display: flex;
+    column-gap: 15px;
 }
 
-.row{
-    display: block;
-    margin: 0 auto;
+.gender-box #gender-option{
+    color: #707070;
+}
+.input-box label, .gender-box label {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
-.col-75{
-    margin-bottom: 12px;
+.form :where(.input-box input){
+    padding: 0 15px;
 }
 
-input[type=text], input[type=tel] {
-width: 40%;
-padding: 1.9rem;
-border: none;
-resize: vertical;
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1.7rem;
+    color: #575757;
+    margin-top: 10px;
+    border: 1px solid #b0d8e7;
 }
 
-input, button {
-    font-size: 1.6rem;
+.input-box input:focus {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-background-color: #1B5F69;
-color: white;
-border-radius: 5px;
-cursor: pointer;
-margin: 10px auto;
-width: 20%;
-padding: 1.6rem;
-border: none;
-resize: vertical;
+
+.form .gender-box {
+    margin-top: 20px;
 }
 
-button:hover {
-background-color: #45a049;
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
 
-body::-webkit-scrollbar {
-    width: 0! important;
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: #0a86ac10;
+}
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1.7rem;
+    color: #707070;
+    padding: 0 15px;
+    border-radius: 5px;
+    
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #46adbb;
+    }
+
+.form button:hover {
+    background: #3897a3;
+}
+
+.sessao-rodape{
+    width: 100%;
+    background-image: url(/resources/imagens/bg-rodape.jpg);
+}
+
+#rodape{
+    display: flex;
+    flex-direction:  arrow;
+    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.logo{
+    width: 60px;
 }
